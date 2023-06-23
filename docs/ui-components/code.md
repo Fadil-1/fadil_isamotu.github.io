@@ -2,7 +2,7 @@
 layout: default
 title: Code
 parent: UI Components
-has_children: true
+has_children: false
 nav_order: 6
 ---
 
