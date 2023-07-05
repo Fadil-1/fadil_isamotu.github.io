@@ -1,8 +1,9 @@
 ---
+#
+# You don't need to edit this file, it's empty on purpose.
+# Edit sleeks's default layout instead if you wanna make some changes
+# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+#
 layout: default
 title: Home
-nav_order: 1
-description: "Just the Docs is a responsive Jekyll theme with built-in search that is easily customizable and hosted on GitHub Pages."
-permalink: /
 ---
-

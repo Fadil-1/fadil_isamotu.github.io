@@ -1,0 +1,30 @@
+
+</style>
+<div class="post-card" itemprop="blogPosts" itemscope="" itemtype="http://schema.org/BlogPosting">
+  
+  <a target="_self" href="{{ post.url | relative_url }}">
+    {% if post.featured-img %}
+      <figure class="post-card__thumb">
+        <img 
+          src="{{ site.url }}{{ site.baseurl }}/assets/img/posts/{{post.featured-img}}"
+          class="lazyload blur"
+          alt="{{post.title}}"
+        />
+        <noscript><img src="{{ site.url }}{{ site.baseurl }}/assets/img/posts/{{post.featured-img}}_thumb.jpg" alt="{{ post.title }}"></noscript>
+      </figure>
+    {% else %}
+      <figure class="post-card__thumb">
+        <div class="dark-bg"></div>
+      </figure>
+    {% endif %}
+  </a>
+  <a target="_self" class="post-card__inner" href="{{ post.url | relative_url }}">
+    <div class="post-card__header">
+      <center>
+        <h2>{{ post.title | strip_html | truncate: 50 }}</h2>
+      </center>
+      
+    </div>
+   
+  </a>
+</div>
